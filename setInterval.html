@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // O setInterval funciona de forma bem parecida com setTimout(). A diferença é que ele irá repetir o código a cada intervalo de tempo informado, ou até que o método clearIterval(), seja executado.
+
+
+        var cont = 0;
+        var t = setInterval('tw()',5000);
+        
+        function tw() {
+
+            cont++;
+
+                alert("O contador está em: "+cont);
+                
+            if(cont == 5){
+                alert("Fim da contagem!");
+                clearInterval(t);
+            }
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

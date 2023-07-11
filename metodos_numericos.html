@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos numéricos JS</title>
+</head>
+<body>
+
+    <script>//MÉTODO to.Fixed()
+
+        // O método .toFixed formata o número com uma quantidade específica de casas decimais, arredondando para o número seguinte
+        // O exemplo abaixo retorna: 14.575, pois ele arredenda para o número seguinte
+
+        var numero = 14.572657475;
+        var numeroFormatado = numero.toFixed(3);
+        console.log(numeroFormatado);
+        alert(numeroFormatado);
+
+
+    </script>
+
+
+    <script>//MÉTODO to.Precision
+
+        // O método to.Precision formata o número para uma quantidade específica de dígitos, arredondando para o número seguinte
+        // O exemplo abaixo retorna 172.74
+
+        var numero2 = 172.7389402;
+        var numeroFormadado2 = numero2.toPrecision(5);
+        console.log(numeroFormadado2);
+        alert(numeroFormadado2);
+
+    </script>
+
+    <script>// MÉTODO  perseInt
+
+        // O método perseInt analisa a string e retorna um número inteiro. Ele extrai o valor númerico da parte inicial da string até encontrar um caracter não numérico
+        // No exemplo que utilizei "7742 ba 333" ele só vai retonar 7742, pois no momento em que aparece algo que não é número o método para de extrair informações da string
+        // E se a string inicializasse com algo que não fosse número ia aparecer  "NaN" que significa Not a Number, ou seja, não é um número. Então a string só pode inicializar com número
+        // OBS: typeof é para mostrar qual é o tipo de dado
+
+        var numeroString = " ba 333" ;
+        var numero = parseInt(numeroString);
+        console.log(numero);
+        alert( typeof numero)
+
+         
+
+    </script>
+    
+</body>
+</html>
